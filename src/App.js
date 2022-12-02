@@ -2,6 +2,7 @@ import './App.css';
 import Button from "./components/button/button.js"
 import Card from "./components/card/card.js"
 import {useState} from "react"
+import CardDisplay from './components/cardDisplay/cardDisplay';
 
 function App() {
   
@@ -26,7 +27,7 @@ function handleClick(){
   return (
     <div className="App">
       <Button handleClick={handleClick}/>
-      <Card pictureArrayOrder={pictureArrayOrder}/>
+      <CardDisplay pictureArrayOrder={pictureArrayOrder}/>
     </div>
   );
 }
