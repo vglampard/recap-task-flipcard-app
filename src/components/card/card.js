@@ -1,7 +1,18 @@
-export default function Card({picture}){
+import ReactCardFlip from "react-card-flip"
+import {useState} from "react"
+
+export default function Card({picture, index}){
+console.log("index:", index)
+const [flipState, setFlipState] = useState(false)
 
     return (
-        <div className="picture-card">
+<ReactCardFlip isFlipped={flipState} flipDirection="vertical">
+            <div>
+              <button onClick={() => setFlipState(!flipState)}> ? </button>
+            </div>
+
+            <div>
+            <div className="picture-card">
         {picture === 1 && (
             <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw79BfqIdikFd0RMlM4r5Mx_-IjKatafyw_whW7PuDDnoYzZNs8qlVBPEFuZd0Mi31kqg&usqp=CAU" alt = "yellow fish" />
             ) }
@@ -17,7 +28,10 @@ export default function Card({picture}){
             ) }
 
         </div>
+            </div>
+          </ReactCardFlip>
+        
         )
         
-    
 }
+

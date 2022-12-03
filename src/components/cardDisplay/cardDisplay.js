@@ -4,9 +4,9 @@ function CardDisplay({pictureArrayOrder}){
     console.log("picture array order at card:", pictureArrayOrder)
     return(
         <div className="card-background">
-            {pictureArrayOrder.map((picture)=>{
+            {pictureArrayOrder.map((picture, i)=>{
             return (
-                <Card picture={picture}
+                <Card picture={picture} index = {i}
                 />
             )
             })}

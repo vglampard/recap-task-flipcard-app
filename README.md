@@ -11,6 +11,7 @@ button:
 on click, shuffleArray (set pictureOrderArray)
 
 
+added react card flip 
 
 shuffling an array:
 
