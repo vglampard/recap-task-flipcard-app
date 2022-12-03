@@ -11,3 +11,16 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.picture-card{
+  border-radius: 50px;
+  border: solid olive;
+  display: flex;
+   justify-content: space-between;
+}
+
+.card-background{
+  background-color: gold;
+  display: flex;
+  flex-wrap: wrap;
+}

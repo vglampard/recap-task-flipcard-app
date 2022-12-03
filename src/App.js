@@ -1,28 +1,25 @@
 import './App.css';
 import Button from "./components/button/button.js"
-import Card from "./components/card/card.js"
 import {useState} from "react"
 import CardDisplay from './components/cardDisplay/cardDisplay';
 
 function App() {
   
-  const [pictureArrayOrder, setPictureArrayOrder] = useState([1, 2, 3, 4])
+  const [pictureArrayOrder, setPictureArrayOrder] = useState([1, 2, 3, 4, 1, 2, 3, 4])
 
-  let shuffledNumbers
-
-  function shuffleArray(){
-    shuffledNumbers = pictureArrayOrder.sort(function () {
+  function handleClick(){
+    let shuffledNumbers = pictureArrayOrder.sort(function () {
       return Math.random() - 0.5;
     });
-    return shuffledNumbers
+    setPictureArrayOrder([...shuffledNumbers])
+    console.log("new shuffle state:", pictureArrayOrder)
   }
   
-function handleClick(){
-  console.log("shuffled array:", pictureArrayOrder)
-  const shuffledArray = shuffleArray(pictureArrayOrder)
-  setPictureArrayOrder(shuffledArray)
-  console.log("new shuffle state:", pictureArrayOrder)
-}
+// function handleClick(){
+//   const shuffledArray = shuffleArray(pictureArrayOrder)
+//   setPictureArrayOrder(shuffledArray)
+//   console.log("new shuffle state:", pictureArrayOrder)
+// }
 
   return (
     <div className="App">

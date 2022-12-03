@@ -1,7 +1,7 @@
 import Card from  "../card/card.js" 
 
 function CardDisplay({pictureArrayOrder}){
-    console.log("pciture array order at card:", pictureArrayOrder)
+    console.log("picture array order at card:", pictureArrayOrder)
     return(
         <div className="card-background">
             {pictureArrayOrder.map((picture)=>{

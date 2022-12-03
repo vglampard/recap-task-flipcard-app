@@ -1,19 +1,21 @@
 export default function Card({picture}){
-  
-    return(
+
+    return (
         <div className="picture-card">
         {picture === 1 && (
-            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTQ7TeyGEqJVHA-b4RJq8-KfLHjMMn0LnENlujzpV2cSvB195xa11zM_Ni7ej4zgl9m47o&usqp=CAU" alt = "smily face" />)
-        }
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw79BfqIdikFd0RMlM4r5Mx_-IjKatafyw_whW7PuDDnoYzZNs8qlVBPEFuZd0Mi31kqg&usqp=CAU" alt = "yellow fish" />
+            ) }
+        
         {picture ===2 && (
-            <img src = "https://p1.hiclipart.com/preview/502/942/553/amazing-fishes-png-clipart.jpg"
+               <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTIoJgQASgJVqZVcj0NjAA9PfQ4E77TxB7el2iQlyx1c2ZexDfS6lAql1RxNwQYpP2njiM&usqp=CAU" alt = "gold fish" />
         )}
-        {picture ===3 && (
-            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSw79BfqIdikFd0RMlM4r5Mx_-IjKatafyw_whW7PuDDnoYzZNs8qlVBPEFuZd0Mi31kqg&usqp=CAU"
-        )}
+        {picture === 3 && (
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSqL0OBgozxih6B142cn0lah7gYphctO45BHnGp3Yxed47b21_EtvHg03F8WOTqC0MNW6M&usqp=CAU" alt = "blue fish" />
+            ) }
         {picture === 4 && (
-            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTkwqmXt1--aLSZ2mCCjfXeAEXpGHEbH0AzfFYt2XEBPiJbutnR0gi6e3ULi1IM1eLdSII&usqp=CAU"
-        )}
+            <img src = "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrbAKFCjleMXjQP9niUn3rkr5kNH-T-3fS6Ys1irZ9I9HmDq6g18dq4Fp4FdGyjBwGYE4&usqp=CAU" alt = "red fish" />
+            ) }
+
         </div>
         )
         
