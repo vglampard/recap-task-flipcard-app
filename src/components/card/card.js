@@ -13,16 +13,33 @@ function flipCardToBlank(){
 // function that flips card to image, then flips it back (using flipCardToBlank) after 1.5 seconds
 function flipCardToImage(){
     setFlipState(true);
-    setTimeout(flipCardToBlank, 1500);
-    setPickedArray(...pickedArray, picture)
+    console.log(picture); // picture here is still an integer!
+
+    // setTimeout(flipCardToBlank, 1500);
+}
+
+function checkForMatch(){
+    if (pickedArray.length === 2){
+    if(pickedArray[0] === pickedArray[1]){
+        console.log("it's a match")
+    }}
+}
+
+// ISSUE: PICTURE is not a number, it's a synthetic base event - ie, 'picture' as an argument is actually just hte event, because handledlip is called as an event handler. 
+function handleFlip(picture){
+    flipCardToImage();
+    console.log("picture:", picture) // by HERE, picture is a synthetic base event!!
+    setPickedArray([...pickedArray, picture])
+    checkForMatch();
     console.log("pickedArray:", pickedArray)
 }
 
 // return a flippable card - on one side is a button that allows users to flip it, on the other is an image coditionally rendered according to which number this card corresponde with in the shuffled array
+
     return (
 <ReactCardFlip isFlipped={flipState} flipDirection="vertical">
             <div className = "image-back">
-              <button onClick={flipCardToImage}> ? </button>
+              <button onClick={handleFlip}> ? </button> 
             </div>
 
             <div>

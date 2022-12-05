@@ -13,6 +13,7 @@ function App() {
       return Math.random() - 0.5;
     });
     setPictureArrayOrder([...shuffledNumbers])
+    console.log("pickedArray at button click:", pickedArray)
     console.log("new shuffle state:", pictureArrayOrder)
   }
   
