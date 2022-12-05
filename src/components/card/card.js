@@ -2,17 +2,20 @@ import ReactCardFlip from "react-card-flip"
 import {useState} from "react"
 import "./card.css"
 
-export default function Card({picture}){
+export default function Card({picture, pickedArray, setPickedArray}){
 const [flipState, setFlipState] = useState(false)
 
+// helper function that flips card to be blank
 function flipCardToBlank(){
     setFlipState(false);
 }
 
-// defining flip function 
+// function that flips card to image, then flips it back (using flipCardToBlank) after 1.5 seconds
 function flipCardToImage(){
     setFlipState(true);
     setTimeout(flipCardToBlank, 1500);
+    setPickedArray(...pickedArray, picture)
+    console.log("pickedArray:", pickedArray)
 }
 
 // return a flippable card - on one side is a button that allows users to flip it, on the other is an image coditionally rendered according to which number this card corresponde with in the shuffled array

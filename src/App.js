@@ -6,6 +6,7 @@ import CardDisplay from './components/cardDisplay/cardDisplay';
 function App() {
   
   const [pictureArrayOrder, setPictureArrayOrder] = useState([1, 2, 3, 4, 1, 2, 3, 4])
+  const [pickedArray, setPickedArray] = useState([])
 
   function handleClick(){
     let shuffledNumbers = pictureArrayOrder.sort(function () {
@@ -24,7 +25,7 @@ function App() {
   return (
     <div className="App">
       <Button handleClick={handleClick}/>
-      <CardDisplay pictureArrayOrder={pictureArrayOrder}/>
+      <CardDisplay pictureArrayOrder={pictureArrayOrder} pickedArray={pickedArray} setPickedArray={setPickedArray}/>
     </div>
   );
 }
