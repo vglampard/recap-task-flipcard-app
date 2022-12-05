@@ -4,14 +4,22 @@ import "./card.css"
 
 export default function Card({picture}){
 const [flipState, setFlipState] = useState(false)
-function flipCard(){
-    setFlipState(!flipState)
+
+function flipCardToBlank(){
+    setFlipState(false);
 }
 
+// defining flip function 
+function flipCardToImage(){
+    setFlipState(true);
+    setTimeout(flipCardToBlank, 1500);
+}
+
+// return a flippable card - on one side is a button that allows users to flip it, on the other is an image coditionally rendered according to which number this card corresponde with in the shuffled array
     return (
 <ReactCardFlip isFlipped={flipState} flipDirection="vertical">
             <div className = "image-back">
-              <button onClick={flipCard}> ? </button>
+              <button onClick={flipCardToImage}> ? </button>
             </div>
 
             <div>
