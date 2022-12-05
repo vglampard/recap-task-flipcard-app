@@ -3,10 +3,10 @@ import Card from  "../card/card.js"
 function CardDisplay({pictureArrayOrder, pickedArray, setPickedArray}){
     return(
         <div className="card-background">
-            {pictureArrayOrder.map((picture)=>{
+            {pictureArrayOrder.map((picture, i)=>{
                  // picture here is still an integer!
             return (
-                <Card picture={picture} pickedArray={pickedArray} setPickedArray = {setPickedArray}
+                <Card id={i} picture={picture} pickedArray={pickedArray} setPickedArray = {setPickedArray}
                 />
             )
             })}
