@@ -6,7 +6,7 @@ function CardDisplay({pictureArrayOrder}){
         <div className="card-background">
             {pictureArrayOrder.map((picture, i)=>{
             return (
-                <Card picture={picture} index = {i}
+                <Card picture={picture}
                 />
             )
             })}

@@ -1,0 +1,8 @@
+.image-back {
+    height: 100px;
+    width: 100px;
+}
+
+.image-front {
+    max-width: 100px;
+}

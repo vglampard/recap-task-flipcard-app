@@ -5,6 +5,8 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url(https://i.pinimg.com/736x/28/68/78/286878f2bd311db878a2f494a961e858--backgrounds-free-free-download.jpg);
+  background-size: cover;
 }
 
 code {
@@ -20,7 +22,7 @@ code {
 }
 
 .card-background{
-  background-color: gold;
   display: flex;
   flex-wrap: wrap;
+  width: 200px;
 }
