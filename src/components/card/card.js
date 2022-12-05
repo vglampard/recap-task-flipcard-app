@@ -6,9 +6,9 @@ export default function Card({picture, pickedArray, setPickedArray}){
 const [flipState, setFlipState] = useState(false)
 
 // helper function that flips card to be blank
-function flipCardToBlank(){
-    setFlipState(false);
-}
+// function flipCardToBlank(){
+//     setFlipState(false);
+// }
 
 // function that flips card to image, then flips it back (using flipCardToBlank) after 1.5 seconds
 function flipCardToImage(){
