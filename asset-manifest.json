@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/recap-task-flipcard-app/static/css/main.5ff8a412.css",
+    "main.js": "/recap-task-flipcard-app/static/js/main.102436f4.js",
+    "static/js/787.9365d477.chunk.js": "/recap-task-flipcard-app/static/js/787.9365d477.chunk.js",
+    "index.html": "/recap-task-flipcard-app/index.html",
+    "main.5ff8a412.css.map": "/recap-task-flipcard-app/static/css/main.5ff8a412.css.map",
+    "main.102436f4.js.map": "/recap-task-flipcard-app/static/js/main.102436f4.js.map",
+    "787.9365d477.chunk.js.map": "/recap-task-flipcard-app/static/js/787.9365d477.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ff8a412.css",
+    "static/js/main.102436f4.js"
+  ]
+}
